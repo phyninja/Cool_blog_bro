@@ -1,0 +1,46 @@
+/*border color: #bdc3c7;
+date color: #3498db;
+h2 color: #2c3e50;
+
+font: source sans pro;*/
+
+/*select all the div elements placed immediately after the 
+body element*/
+body+div{
+	text-align: center; /*centers whatever is inside #outerContainer, but doesn't go any deeper down the tree*/
+}
+
+#container{
+	font-family: 'Source Sans Pro', sans-serif;
+	width: 70%;
+	margin: 0 auto; /*first argument affects top & bottom, second one right and left*/
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	padding: 2vw;
+	padding-top: 0;
+	border: 1.6vw solid #bdc3c7;
+
+}
+
+div+h2{
+	text-transform: capitalize;
+	font-weight: 700;
+}
+
+h5{
+	font-weight: 400;
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+h2+p{
+	border-left: 0.6vw solid #bdc3c7;
+	padding-left: 0.6vw;
+}
+
+hr{
+	 border: 0;
+    height: 0.15em;
+    background-image: linear-gradient(to right, rgba(189, 195, 199, 0.25), rgba(189, 195, 199, 0.75), rgba(189, 195, 199, 0.25));
+}
